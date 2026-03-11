@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges | FitTrack Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="challenges.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo"><i class="fas fa-heartbeat"></i> FitTrack <span>Pro</span></div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul id="navLinks">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="challenges.html" class="active"><i class="fas fa-fire"></i> Challenges</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <div class="welcome-text">
+                    <h1>Active <span>Challenges</span></h1>
+                    <p>Join a challenge and push your limits, Pranav!</p>
+                </div>
+                <div class="user-profile">
+                    <img src="pranav_profile.jpg" alt="Pranav Nair" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">Pranav Nair</span>
+                        <span class="user-rank">Pro Member</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="challenges-grid">
+                <div class="glass-card challenge-card">
+                    <div class="bg-walking-container"><i class="fas fa-walking bg-walking-person" style="animation-duration: 20s; opacity: 0.03;"></i></div>
+                    <div class="challenge-icon"><i class="fas fa-walking"></i></div>
+                    <div class="challenge-content">
+                        <h3>100k Steps Month</h3>
+                        <p>Walk 100,000 steps this month to earn the 'Marathoner' badge.</p>
+                        <div class="challenge-meta">
+                            <span><i class="fas fa-users"></i> 1,240 Participants</span>
+                            <span><i class="fas fa-calendar-alt"></i> 12 Days Left</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                        <button class="join-challenge-btn">Join Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card challenge-card">
+                    <div class="bg-walking-container"><i class="fas fa-walking bg-walking-person" style="animation-delay: 5s; animation-duration: 18s; opacity: 0.03;"></i></div>
+                    <div class="challenge-icon"><i class="fas fa-bed"></i></div>
+                    <div class="challenge-content">
+                        <h3>Sleep Hygiene Pro</h3>
+                        <p>Get 7.5+ hours of sleep for 21 consecutive days.</p>
+                        <div class="challenge-meta">
+                            <span><i class="fas fa-users"></i> 850 Participants</span>
+                            <span><i class="fas fa-calendar-alt"></i> 5 Days Left</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%;"></div>
+                        </div>
+                        <button class="join-challenge-btn">Join Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card challenge-card">
+                    <div class="bg-walking-container"><i class="fas fa-walking bg-walking-person" style="animation-delay: 10s; animation-duration: 22s; opacity: 0.03;"></i></div>
+                    <div class="challenge-icon"><i class="fas fa-apple-alt"></i></div>
+                    <div class="challenge-content">
+                        <h3>Hydration Hero</h3>
+                        <p>Drink at least 3 liters of water every day for a week.</p>
+                        <div class="challenge-meta">
+                            <span><i class="fas fa-users"></i> 2,100 Participants</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2 Days Left</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                        <button class="join-challenge-btn Joined">Joined</button>
+                    </div>
+                </div>
+
+                <div class="glass-card challenge-card">
+                    <div class="bg-walking-container"><i class="fas fa-walking bg-walking-person" style="animation-delay: 15s; animation-duration: 25s; opacity: 0.03;"></i></div>
+                    <div class="challenge-icon"><i class="fas fa-dumbbell"></i></div>
+                    <div class="challenge-content">
+                        <h3>Lunchtime HIIT</h3>
+                        <p>Join the 15-minute virtual HIIT session every Monday and Wednesday.</p>
+                        <div class="challenge-meta">
+                            <span><i class="fas fa-users"></i> 520 Participants</span>
+                            <span><i class="fas fa-calendar-alt"></i> Ongoing</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 10%;"></div>
+                        </div>
+                        <button class="join-challenge-btn">Join Now</button>
+                    </div>
+                </div>
+
+                <!-- New Challenges -->
+                <div class="glass-card challenge-card">
+                    <div class="bg-walking-container"><i class="fas fa-walking bg-walking-person" style="animation-delay: 3s; animation-duration: 21s; opacity: 0.03;"></i></div>
+                    <div class="challenge-icon" style="color: #9b59b6;"><i class="fas fa-om"></i></div>
+                    <div class="challenge-content">
+                        <h3>Zen Master</h3>
+                        <p>Complete 10 minutes of guided meditation every day for 30 days.</p>
+                        <div class="challenge-meta">
+                            <span><i class="fas fa-users"></i> 340 Participants</span>
+                            <span><i class="fas fa-calendar-alt"></i> 25 Days Left</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 20%; background: #9b59b6;"></div>
+                        </div>
+                        <button class="join-challenge-btn" style="border-color: #9b59b6; color: #9b59b6;">Join Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card challenge-card">
+                    <div class="bg-walking-container"><i class="fas fa-walking bg-walking-person" style="animation-delay: 7s; animation-duration: 16s; opacity: 0.03;"></i></div>
+                    <div class="challenge-icon" style="color: #2ecc71;"><i class="fas fa-running"></i></div>
+                    <div class="challenge-content">
+                        <h3>5K Power Run</h3>
+                        <p>Complete a 5K distance run in under 30 minutes this week.</p>
+                        <div class="challenge-meta">
+                            <span><i class="fas fa-users"></i> 150 Participants</span>
+                            <span><i class="fas fa-calendar-alt"></i> 4 Days Left</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%; background: #2ecc71;"></div>
+                        </div>
+                        <button class="join-challenge-btn" style="border-color: #2ecc71; color: #2ecc71;">Join Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card challenge-card">
+                    <div class="bg-walking-container"><i class="fas fa-walking bg-walking-person" style="animation-delay: 12s; animation-duration: 19s; opacity: 0.03;"></i></div>
+                    <div class="challenge-icon" style="color: #1abc9c;"><i class="fas fa-leaf"></i></div>
+                    <div class="challenge-content">
+                        <h3>Yoga Newbie</h3>
+                        <p>Attend any 10 morning yoga sessions to build core flexibility.</p>
+                        <div class="challenge-meta">
+                            <span><i class="fas fa-users"></i> 890 Participants</span>
+                            <span><i class="fas fa-calendar-alt"></i> 18 Days Left</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 50%; background: #1abc9c;"></div>
+                        </div>
+                        <button class="join-challenge-btn" style="border-color: #1abc9c; color: #1abc9c;">Join Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card challenge-card">
+                    <div class="bg-walking-container"><i class="fas fa-walking bg-walking-person" style="animation-delay: 18s; animation-duration: 23s; opacity: 0.03;"></i></div>
+                    <div class="challenge-icon" style="color: #e67e22;"><i class="fas fa-weight-hanging"></i></div>
+                    <div class="challenge-content">
+                        <h3>Strength Builder</h3>
+                        <p>Complete 15 full-body strength workouts this month.</p>
+                        <div class="challenge-meta">
+                            <span><i class="fas fa-users"></i> 420 Participants</span>
+                            <span><i class="fas fa-calendar-alt"></i> 10 Days Left</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 33%; background: #e67e22;"></div>
+                        </div>
+                        <button class="join-challenge-btn" style="border-color: #e67e22; color: #e67e22;">Join Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 FitTrack Pro - ITM Skills University Project</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="working.js"></script>
+</body>
+
+</html>

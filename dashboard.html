@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | FitTrack Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo"><i class="fas fa-heartbeat"></i> FitTrack <span>Pro</span></div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul id="navLinks">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="dashboard.html" class="active"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="challenges.html"><i class="fas fa-fire"></i> Challenges</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <div class="welcome-text">
+                    <h1>Welcome back, <span>Pranav!</span></h1>
+                    <p>Here's what's happening with your health today.</p>
+                </div>
+                <div class="user-profile">
+                    <img src="pranav_profile.jpg" alt="Pranav Nair" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">Pranav Nair</span>
+                        <span class="user-rank">Pro Member</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card glass-card">
+                    <div class="stat-icon steps-icon"><i class="fas fa-walking"></i></div>
+                    <div class="stat-info">
+                        <h3>Daily Steps</h3>
+                        <p class="stat-value" id="dashSteps">8,432</p>
+                        <p class="stat-goal">Goal: 10,000</p>
+                    </div>
+                    <div class="stat-progress">
+                        <div class="progress-circle" style="--p:84;--c:var(--primary);">84%</div>
+                    </div>
+                </div>
+
+                <div class="stat-card glass-card">
+                    <div class="stat-icon calorie-icon"><i class="fas fa-fire"></i></div>
+                    <div class="stat-info">
+                        <h3>Calories</h3>
+                        <p class="stat-value">1,240</p>
+                        <p class="stat-goal">Goal: 2,000 kcal</p>
+                    </div>
+                    <div class="stat-progress">
+                        <div class="progress-circle" style="--p:62;--c:#e74c3c;">62%</div>
+                    </div>
+                </div>
+
+                <div class="stat-card glass-card">
+                    <div class="stat-icon active-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-info">
+                        <h3>Active Min</h3>
+                        <p class="stat-value">45</p>
+                        <p class="stat-goal">Goal: 60 min</p>
+                    </div>
+                    <div class="stat-progress">
+                        <div class="progress-circle" style="--p:75;--c:#f1c40f;">75%</div>
+                    </div>
+                </div>
+
+                <div class="stat-card glass-card">
+                    <div class="stat-icon sleep-icon"><i class="fas fa-moon"></i></div>
+                    <div class="stat-info">
+                        <h3>Sleep</h3>
+                        <p class="stat-value">7.5h</p>
+                        <p class="stat-goal">Goal: 8h</p>
+                    </div>
+                    <div class="stat-progress">
+                        <div class="progress-circle" style="--p:93;--c:#9b59b6;">93%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-row">
+                <div class="activity-chart glass-card">
+                    <h3>Weekly Activity</h3>
+                    <div class="chart-container">
+                        <div class="chart-y-axis">
+                            <span>10k</span>
+                            <span>7.5k</span>
+                            <span>5k</span>
+                            <span>2.5k</span>
+                            <span>0</span>
+                        </div>
+                        <div class="bar-chart">
+                            <div class="grid-lines">
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 65%;"><span class="day">Mon</span><span class="bar-value">6.5k</span></div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 85%;"><span class="day">Tue</span><span class="bar-value">8.5k</span></div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 45%;"><span class="day">Wed</span><span class="bar-value">4.5k</span></div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 95%;"><span class="day">Thu</span><span class="bar-value">9.5k</span></div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div id="todayBar" class="bar" style="height: 84%;"><span class="day">Fri</span><span class="bar-value">8.4k</span></div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 30%;"><span class="day">Sat</span><span class="bar-value">3.0k</span></div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 20%;"><span class="day">Sun</span><span class="bar-value">2.0k</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements glass-card">
+                    <h3>Recent Badges</h3>
+                    <div class="badge-list">
+                        <div class="badge-item">
+                            <i class="fas fa-award"></i>
+                            <span>7 Day Streak</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Early Bird</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>Climber</span>
+                        </div>
+                    </div>
+                    <button class="view-all-btn">View All Badges</button>
+                </div>
+            </section>
+
+            <section class="update-section glass-card">
+                <h3>Quick Log</h3>
+                <div class="log-form">
+                    <input type="number" id="dashStepInput" placeholder="Enter steps...">
+                    <button id="dashUpdateBtn">Update Today's Progress</button>
+                    <button id="dashResetBtn" style="padding: 0.8rem 1.5rem; background: rgba(255,255,255,0.05); color: white; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; cursor: pointer; font-weight: 600; transition: 0.3s; margin-left: 10px;">Reset</button>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 FitTrack Pro - ITM Skills University Project</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="working.js"></script>
+</body>
+
+</html>
